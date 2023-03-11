@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="left-side">
+        <div class="images-parent">
+            <img class="plant"src="halie-west-25xggax4bSA-unsplash.jpg" alt="plant">
+            <div class="logo-banner">
+                <img class="odin-logo" src="odin-lined.png" alt="logo">
+                <h1 class="logo-text">Odin</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="right-side">
+        <div class="top-section">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+               <br>Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.</p>
+        </div>
+
+        <form class="bottom-section">
+            <div class="first-row">
+                <div class="row-title"><strong>Let's Do this!</strong></div>
+                <div class="form-box">
+                    <div class="row">
+                        <div>
+                            <label for="firstname">First name</label>
+                            <input id="firstname"/>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" id="email"/>
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <label for="lastname">Last Name</label>
+                            <input type="text" id="lastname"/>
+                        </div>
+                        <div>
+                            <label for="phone">Phone Number</label>
+                            <input type="number" id="phone"/>
+                        </div>
+                        <div>
+                            <label for="confirm">Confirm Password</label>
+                            <input type="password" id="confirm" name="password-confirmation"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second-row">
+                <button class="button-29" role="button" type="submit">Create Account</button>
+                <div>Already have an account?<a> Log in</a></div>
+            </div>
+        </form>
+    </div>
+    
+    <script>
+
+        var button = document.querySelector('.button-29')
+        
+        button.addEventListener('click', () => {
+
+            var pass = document.getElementById('#password').value;
+            var passconf = document.getElementById('#confirm').value;
+            console.log(pass);
+
+        });
+
+
+
+
+    </script>
+</body>
+</html>
